@@ -14,7 +14,7 @@ const { logger } = require('../config/logger');
 const limiter = rateLimit({
     /* 20 requests every hour */
     windowMs: 60 * 60 * 1000,
-    limit: 20,
+    limit: 40,
     standardHeaders: 'draft-7',
     legacyHeaders: false,
     handler(req, res) {
